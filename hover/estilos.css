@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+    color: green;
+    font-size: 12px;
+    transition: color 0.8s ease;
+
+}
+
+a:hover{
+    color: blue;
+    font-size: 24px;
+}
+
+button{
+    background-color: rgb(172, 124, 228);
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: background-color 0.5s ease, transform 0.9s ease;
+}
+
+button:hover{
+    background-color: blue;
+    color:yellow;
+    transform: scale(1.09);
+}

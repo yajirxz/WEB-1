@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EliezxRTS/dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página personal de Eli">
+    <meta name="keywords" content="UNAM, FES, Aragón, ICO, Computación">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/master.css">
+    <script src="./assets/js/cliente.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Eliezer Isaí Monroy Quintero</h1>
+        <h3>Mi página personal</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.aragon.unam.mx/fes-aragon/#!/inicio">FES Aragón</a></li>
+                <li><a href="https://github.com/EliezxRTS">GitHub EliezxRTS</a></li>
+                <li>
+                    <ul>
+                        <li><a href="code.html">Code</a></li>
+                        <li><a href="listas.html">Listas</a></li>
+                        <li><a href="links.html">Enlaces e imágenes</a></li>
+                        <li><a href="tablas.html">Tablas</a></li>
+                        <li><a href="formularios.html">Formularios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Links e imágenes</h1>
+
+            <article>
+                <h3>img</h3>
+                <p><code style="background-color: rgb(209, 205, 205);">&lt;A&gt;</code> es un tag para incrustar imágenes en la página. <br>
+                Sus atributos principales son:
+                <ul>
+                    <li>title</li>
+                    <li>href</li>
+                    <li>target</li>
+                </ul>
+
+                <br>
+                Opciones de target:
+                <ul>
+                    <li>_self: Abre el enlace en la misma página</li>
+                    <li>_blank: Abre en una nueva página</li>
+                    <li>_parent: Abre la página contenedora de la actual</li>
+                    <li>_top: Abre la página en la parte superior de parent</li>
+                </ul>
+
+                Ejemplo: <a title="link a github"
+                href="https://github.com/"
+                target="_blank">Sitio de github</a>
+                </p>
+            </article>
+
+            <article>
+                <h3>Imágenes</h3>
+                <p>El tag <code style="background-color: rgb(209, 205, 205);">&lt;img&gt;</code> sirve para incrustar imágenes en la página <br>
+                    Sus atributos pricipales son:
+                    <ul>
+                        <li>title: Es el tooltip</li>
+                        <li>src: Es la URL de la imágen, ya sea relativa o absoluta</li>
+                        <li>width: Ancho en pixeles</li>
+                        <li>heigth: Alto en pixeles</li>
+                        <li>loading: Forma de carga (lazy o eager)</li>
+                    </ul>
+                    <img
+                    title="Mizutzune"
+                    src="./assets/img/Mizutzune.jpg"
+                    alt="Mizutzune">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere doloremque impedit laboriosam vel, aliquam dolore dolor unde laborum, quo, minus recusandae modi at alias possimus consectetur dolores autem natus! Esse?
+                </p>
+
+                <p>
+                    <h3>Ajute de alto y ancho</h3>
+                    <img
+                    title="Mizutzune"
+                    src="./assets/img/Mizutzune.jpg"
+                    alt="Mizutzune"
+                    width="500"
+                    height="370">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsum nobis quia soluta perspiciatis nemo fugiat saepe quae quibusdam. Aliquam distinctio praesentium veniam reprehenderit possimus illum nesciunt assumenda modi molestias!
+                </p>
+
+                <p></p>
+                    <h3>Probando lazy loading</h3>
+                    <img
+                    title="Mizutzune"
+                    src="./assets/img/Mizutzune.jpg"
+                    alt="Mizutzune"
+                    loading="lazy">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ipsum nobis quia soluta perspiciatis nemo fugiat saepe quae quibusdam. Aliquam distinctio praesentium veniam reprehenderit possimus illum nesciunt assumenda modi molestias!
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados 2024. FES Aragón UNAM.</p>
+    </footer>
+</body>
+
+</html>

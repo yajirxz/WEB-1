@@ -1,0 +1,19 @@
+.boton{
+    padding: 10px;
+    background-color: aquamarine;
+    color: green;
+    border-radius: 6px;
+
+}
+
+.boton::before{
+    content: "-";
+    margin-right: 10px;
+    color: brown;
+}
+
+.boton::after{
+    content: "->";
+    color: black;
+    margin-left: 2px;
+}

@@ -1,0 +1,26 @@
+input{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.6s ease;
+}
+
+input:focus{
+    
+    border-color: green;
+    outline: none;
+}
+
+button{
+    background-color: green;
+    color: rgb(234, 234, 234);
+    margin: 3px;    
+    border-radius: 5px;
+    border: none;
+
+}
+
+button:not(.algo){
+    background-color: pink;
+    
+}

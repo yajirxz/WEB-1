@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(31, 131, 230);
+    color: rgb(250, 250, 250);
+}
+
+.contenedor{
+    padding: 20px;
+    margin: 0 auto;
+    background-color: rgb(45, 45, 45);
+}
+
+.texto-color{
+    color: aliceblue;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.fondo-solido{
+    background-color: green;
+    color:white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fondo-imagen{
+    background-image: url('https://store-images.s-microsoft.com/image/apps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae?mode=scale&q=90&h=1080&w=1920&format=jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+}

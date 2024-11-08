@@ -1,0 +1,76 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(205, 202, 202);
+}
+
+a {
+  color: #00B7FF;
+}
+
+.contenedor{
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+label{
+  color: #333;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #d8d0d0;
+  border-radius: 8px;
+  transition: border-color 0.5s;
+}
+
+input:hover, textarea:hover{
+  border-color: #2a9d8f;
+}
+
+input::placeholder, 
+textarea::placeholder{
+  color: #999;
+  font-style: italic;
+}
+
+input:focus,
+textarea:focus{
+  border-color: #2c6c5d;
+  outline: none;
+}
+
+.checkbox-container{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+input[type="checkbox"]{
+  margin-top: 10px;
+  accent-color: #2a9d8f;
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: #2a9d8f;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  transition: backgraund-color 0.4s;
+}
+
+button:hover{
+  background-color: #21867a;
+}

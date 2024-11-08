@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Paincake</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página personal de Eli">
+    <meta name="keywords" content="UNAM, FES, Aragón, ICO, Computación">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/master.css">
+    <script src="./assets/js/cliente.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Azuara Ocotitla Arturo Ivan</h1>
+        <h3>Mi página personal</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.aragon.unam.mx/fes-aragon/#!/inicio">FES Aragón</a></li>
+                <li><a href="https://github.com/ArturoAzuara">GitHub</a></li>
+                <li>
+                    <ul>
+                        <li><a href="code.html">Code</a></li>
+                        <li><a href="listas.html">Listas</a></li>
+                        <li><a href="links.html">Enlaces e imágenes</a></li>
+                        <li><a href="tablas.html">Tablas</a></li>
+                        <li><a href="formularios.html">Formularios</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Formularios</h1>
+
+            <article>
+                <h3>Introducción</h3>
+                <p>Es un control creado con el tag FORM, el cual permite obtener información de entrada desde el usuario</p>
+                <br>
+                <h5>Atributos importntes</h5>
+                <ul>
+                    <li>Action: Establece la URL destino de los datos</li>
+                    <li>Method: Establece el verbo del protocolo HTTP con el cual se enviará la información. Los más usados son GET y POST</li>
+                    <li>Name: Asigna un nombre al formulario para ser recuperado del lado del servidor</li>
+                </ul>
+                <br>
+                <form action="./login.php" method="GET" name="loginfrm">
+                    <label for="Username">Usuario:</label>
+                    <input type="text" id="Username" name="Username">
+                    <label for="password">Contrseña:</label>
+                    <input type="password" id="password" name="password">
+                    <input type="submit" value="Enviar">
+                </form>
+            </article>
+            <article>
+                <h3>Login completo</h3>
+                    <form action="./procesa.php" method="POST">
+                        <label for ="usuario">Usuario: </label>
+                        <input type="text" id = "usuario" name = "usuario">
+                        <br></br>
+                        <label for= "password">Contraseña:</label>
+                        <input type="password" id="password" name="password">
+                        <br></br>
+                        <input type="submit" value="Iniciar sesion">
+                    </form>
+            </article>   
+            <article>
+                <h3>Login completo</h3>
+                    <form action="./options.php" method="POST">
+                        <select name="fruta" id="fruta">
+                            <option value="fresa">Fresas rojas</option>
+                            <option value="naranja">Naranja del bajio</option>
+                            <option value="pera">Pera criolla</option>
+                            <option value="avocado">Nikocado avocado</option>
+                            <option value="kiwi" selected>Kiwi para la dieta</option>
+                        </select>
+                        <input type="submit" value="Selected">
+                    </form>
+            </article>  
+            <article>
+                <h3>Genero</h3>
+                    <form action="./controles2.php" method="POST">
+                        <label for="correo">Correo electronico: </label>
+                        <input type="email" id="correo" name="correo" required>
+                        <br>
+                        <label for="edad">Edad: </label>
+                        <input type="number" id="edad" name="edad" required>
+                        <br>
+                        <label for="comentario">Escribe tu caso: </label>
+                        <textarea name="comentario" id="comentario" cols="40" rows="4"></textarea>
+                        <br>
+                        <label for="genero">Genero: </label>
+                        <br>
+                        <label for="hombre">Hombre </label>
+                        <input type="radio" id="hombre" name="genero" value="hombre">
+                        <br>
+                        <label for="mujer">Mujer </label>
+                        <input type="radio" id="mujer" name="genero" value="mujer">
+                        <br>
+                        <label for="LGBT">LGBT</label>
+                        <input type="radio" id="LGBT" name="genero" value="LGBT">
+                        <br>
+                        <label for="NODECIR">Prefiero no decir</label>
+                        <input type="radio" id="nodecir" name="genero" value="Prefiero no decir">
+                        <input type="submit" value="Iniciar sesion">
+                        <br>
+                    </form>
+            </article> 
+            <br>
+            <article>
+                <h3>Comida favorita</h3>
+                    <form action="./controles2.php" method="POST">
+                        <label for="Tortas">Tortas</label>: </label>
+                        <input type="checkbox" id="tortas" name="tortas" value="tortas">
+                        <br>
+                        <label for="Tamales">Tamales</label>
+                        <input type="checkbox" id="tamales" name="tamales" value="tamales">
+                        <br>
+                        <label for="Huaraches">Huaraches</label>
+                        <input type="checkbox" id="huaraches" name="huaraches" value="huaraches">
+
+                        <input type="submit" value="Enviar">
+                    </form>
+            </article> 
+            <article>
+                <h3>Tipos de entrada</h3>
+                <p>
+                    <ul>
+                        <li>Texto (TEXT): Permite capturar texto en claro</li>
+                        <li>Área de texto (TEXTAREA): Permite capturar texto de múltiple línea</li>
+                        <li>Contrseña (PASSWORD): Permite capturar texto oculto</li>
+                        <li>Correo (EMAIL): Permite capturar correos electrónicos validados</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados 2024. FES Aragón UNAM.</p>
+    </footer>
+</body>
+
+</html>
